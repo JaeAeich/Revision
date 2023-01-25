@@ -19,11 +19,9 @@ The repository currently many important questions and further plans to add the f
 Copy code
 ## Quick Access :fast_forward:
 
-If you're in a hurry and need quick access to the solutions, you can also check out my Leetcode submissions repository :arrow_right: 
-```
-https://github.com/JaeAeich/Leetcode-Submissions
-```
-:wrench: The solutions there may not be as well-commented as the ones here, but they are constantly updated and you can find the latest solutions there. :clock1:
+If you're in a hurry and need quick access to the solutions, you can also check out my Leetcode submissions
+repository :arrow_right:(https://github.com/JaeAeich/Leetcode-Submissions) :wrench: The solutions there may
+not be as well-commented as the ones here, but they are constantly updated and you can find the latest solutions there. :clock1:
 
 1. Array:page_with_curl:
     - [x]  Two Sum :heavy_check_mark:
