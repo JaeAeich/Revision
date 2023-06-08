@@ -20,13 +20,14 @@ int maxLen(vector<int> &v, int n)
     for (int i = 0; i < n; i++)
     {
         sum += v[i];
-        // If ith ele itself is zero and maxlen is 0 till now, update len to 1.
-        if (v[i] == 0 && len == 0)
-            len = 1;
-        // If prefix sum itself becomes zero then max len will become i+1, not max(len,i+1) because prefix sum has longest subarray as it starts form idx 0.
+
+        // If prefix sum itself becomes zero then max len will become i+1,
+        // not max(len,i+1) because prefix sum has longest subarray as it starts form idx 0.
         if (sum == 0)
             len = i + 1;
-        // If sum already exists in hash map then we can substract that subarray from this one to get sum equal to zero.
+        // If sum already exists in hash map then we can substract that 
+        // subarray from this one to get sum equal to zero, and don't update the hash
+        // as if that would reduce the len of the array on calc next time 
         if (m.find(sum) != m.end())
         {
             len = max(len, i - m[sum]);
